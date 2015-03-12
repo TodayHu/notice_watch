@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Copy of watchkitsample3.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Notification - watchkitsample3 WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>watchkitsample3 WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>watchkitsample3.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>589AA60C1AAFAA430006E574</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>589AA62D1AAFAAB50006E574</key>
 		<dict>
 			<key>primary</key>
 			<true/>

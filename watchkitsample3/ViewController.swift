@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +21,29 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func toNoticetoLocal(sender: AnyObject) {
+        
+        var localNotif:UILocalNotification? = UILocalNotification()
+        
+        if localNotif == nil{
+            return
+        }
+        
+        let calendar = NSCalendar(identifier: NSGregorianCalendar)!
+        
+        var date:NSDate = NSDate()
+        
+        localNotif?.fireDate = NSDate(timeIntervalSinceNow: 10)//10秒後
+        localNotif?.timeZone = NSTimeZone.defaultTimeZone()
+        localNotif?.alertBody = "通知を受信しました"
+        localNotif?.alertAction = "Open"
+        localNotif?.soundName = UILocalNotificationDefaultSoundName
+        localNotif?.applicationIconBadgeNumber = 1
+        let infoDict:NSDictionary! = ["EventKey": "通知を受信しました。"]
+        localNotif?.userInfo = infoDict as! [NSObject : AnyObject]
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotif!)
+        
+    }
 
 }
 
